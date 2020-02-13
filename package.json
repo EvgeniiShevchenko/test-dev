@@ -5,8 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "eslint --debug src/",
-    "lint:write": "eslint --debug src/ --fix"
+    "lint: js": "eslint. --ext .js, .vue",
+    "lint: js: fix": "npm run lint: js - --fix"
   },
   "husky": {
     "hooks": {
@@ -14,7 +14,10 @@
     }
   },
   "lint-staged": {
-    "*.(js|vue)": ["npm run lint:write"]
+    "./src/*.{js,jsx,ts,tsx,vue}": [
+      "npx prettier --write",
+      "eslint src/*.js --fix-dry-run"
+    ]
   },
   "dependencies": {
     "husky": "^4.2.3",

@@ -1,13 +1,18 @@
-import Vue from 'vue';
-import App from './App.vue';
-import { store } from './store/store';
+import Vue from "vue";
+import App from "./App.vue";
+import { store } from "./store/store";
 
 Vue.config.productionTip = false;
-console.log('knvnd');
+console.log("knvnd");
+console.log("knvnd");
+console.log("knvnd");
+console.log("knvnd");
+console.log("knvnd");
+console.log("knvnd");
 
 new Vue({
   store,
   render: function(h) {
     return h(App);
   }
-}).$mount('#app');
+}).$mount("#app");
