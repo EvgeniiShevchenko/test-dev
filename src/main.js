@@ -3,6 +3,7 @@ import App from './App.vue';
 import { store } from './store/store';
 
 Vue.config.productionTip = false;
+console.log('knvnd');
 
 new Vue({
   store,

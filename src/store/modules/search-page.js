@@ -1,16 +1,15 @@
 const getDefaultState = () => {
-  return {
-  }
+  return {};
 };
 
 export default {
-namespaced: true,
+  namespaced: true,
 
-state: getDefaultState(),
+  state: getDefaultState(),
 
-getters: {},
+  getters: {},
 
-mutations: {},
+  mutations: {},
 
-actions: {}
+  actions: {}
 };
