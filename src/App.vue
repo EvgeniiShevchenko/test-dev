@@ -1,12 +1,11 @@
 <template>
-  <h3>Hello</h3>
+  <h3 class="hello">Hello</h3>
 </template>
 
 <script>
 export default {
-  name: 'App',
-}
+  name: "App"
+};
 </script>
 
-<style>
-</style>
+<style lang="scss" scoped></style>
